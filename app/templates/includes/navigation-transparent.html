@@ -7,7 +7,7 @@
           <!-- Products -->
           <li class="nav-item dropdown dropdown-hover mx-2 ms-lg-6">
             <a class="nav-link ps-2 d-flex justify-content-between cursor-pointer align-items-center" id="dropdownMenuPages" data-bs-toggle="dropdown" aria-expanded="false">
-              Products
+              Товары
               <img src="/static/assets/img/down-arrow-white.svg" alt="down-arrow" class="arrow ms-1 d-lg-block d-none">
               <img src="/static/assets/img/down-arrow-dark.svg" alt="down-arrow" class="arrow ms-1 d-lg-none d-block">
             </a>
@@ -31,15 +31,15 @@
                       </svg>
                     </div>
                   </div>
-                  Samples
+                  Примеры
                 </h6>
                 {% if current_user.is_authenticated %}
                 <a href="{{ url_for('load_product_json') }}" class="dropdown-item border-radius-md">
-                  Edit Products
+                  Редактировать товары
                 </a>
                 {% endif %}
                 <a href="{{ url_for('products_index') }}" class="dropdown-item border-radius-md">
-                  All Products
+                  Все товары
                 </a>
               </div>
               <div class="d-lg-none">
@@ -61,13 +61,13 @@
                       </svg>
                     </div>
                   </div>
-                  Pages
+                  Страницы
                 </h6>
                 <a href="https://a-biz.kz/about_us/" class="dropdown-item border-radius-md">
-                  About Us
+                  О компании
                 </a>
                 <a href="https://a-biz.kz/contacts/" class="dropdown-item border-radius-md">
-                  Contact Us
+                  Контакты
                 </a>
                 <h6 class="dropdown-header text-dark font-weight-bolder d-flex justify-content-cente align-items-center px-0 mt-3">
                   <div class="d-inline-block">
@@ -79,7 +79,7 @@
                             <g id="Icons-with-opacity" transform="translate(1716.000000, 291.000000)">
                               <g id="office" transform="translate(153.000000, 2.000000)">
                                 <path d="M12.25,17.5 L8.75,17.5 L8.75,1.75 C8.75,0.78225 9.53225,0 10.5,0 L31.5,0 C32.46775,0 33.25,0.78225 33.25,1.75 L33.25,12.25 L29.75,12.25 L29.75,3.5 L12.25,3.5 L12.25,17.5 Z" id="Path" opacity="0.6"></path>
-                                <path d="M40.25,14 L24.5,14 C23.53225,14 22.75,14.78225 22.75,15.75 L22.75,38.5 L19.25,38.5 L19.25,22.75 C19.25,21.78225 18.46775,21 17.5,21 L1.75,21 C0.78225,21 0,21.78225 0,22.75 L0,40.25 C0,41.21775 0.78225,42 1.75,42 L40.25,42 C41.21775,42 42,41.21775 42,40.25 L42,15.75 C42,14.78225 41.21775,14 40.25,14 Z M12.25,36.75 L7,36.75 L7,33.25 L12.25,33.25 L12.25,36.75 Z M12.25,29.75 L7,29.75 L7,26.25 L12.25,26.25 L12.25,29.75 Z M35,36.75 L29.75,36.75 L29.75,33.25 L35,33.25 L35,36.75 Z M35,29.75 L29.75,29.75 L29.75,26.25 L35,26.25 L35,29.75 Z M35,22.75 L29.75,22.75 L29.75,19.25 L35,19.25 L35,22.75 Z" id="Shape"></path>
+                                <path d="M40.25,14 L24.5,14 C23.53225,14 22.75,14.78225 22.75,15.75 L22.75,38.5 L19.25,38.5 L19.25,22.75 C19.25,21.78225 18.46775,21 17.5,21 L1.75,21 C0.78225,21 0,21.78225 0,22.75 L0,40.25 C0,41.21775 0.78225,42 1.75,42 L40.25,42 C41.21775,42 42,41.21775 42,40.25 L42,15.75 C42,14.78225 41.21775,14 40.25,14 Z M12.25,36.75 L7,36.75 L7,33.25 L12.25,33.25 L12.25,36.75 Z M12.25,29.75 L7,29.75 L7,26.25 L12.25,26.25 L12.25,29.75 Z M35,36.75 L29.75,36.75 L29.75,33.25 L35,33.25 L35,36.75 З M35,29.75 L29.75,29.75 Л29.75,26.25 Л35,26.25 Л35,29.75 З М35,22.75 Л29.75,22.75 Л29.75,19.25 Л35,19.25 Л35,22.75 З" id="Shape"></path>
                               </g>
                             </g>
                           </g>
@@ -87,16 +87,16 @@
                       </svg>
                     </div>
                   </div>
-                  Account
+                  Аккаунт
                 </h6>
                 <a href="{{ url_for('login') }}" class="dropdown-item border-radius-md">
-                  Sign In
+                  Войти
                 </a>
                 <a href="/page-sign-up.html" class="dropdown-item border-radius-md">
-                  Register
+                  Регистрация
                 </a>
                 <a href="/page-404.html" class="dropdown-item border-radius-md">
-                  Error 404
+                  Ошибка 404
                 </a>
               </div>
             </div>
@@ -105,7 +105,7 @@
           <!-- Pages -->
           <li class="nav-item dropdown dropdown-hover mx-2">
             <a class="nav-link ps-2 d-flex justify-content-between cursor-pointer align-items-center" id="dropdownMenuPages" data-bs-toggle="dropdown" aria-expanded="false">
-              Pages
+              Страницы
               <img src="/static/assets/img/down-arrow-white.svg" alt="down-arrow" class="arrow ms-1 d-lg-block d-none">
               <img src="/static/assets/img/down-arrow-dark.svg" alt="down-arrow" class="arrow ms-1 d-lg-none d-block">
             </a>
@@ -129,16 +129,16 @@
                       </svg>
                     </div>
                   </div>
-                  Landing Pages
+                  Лендинги
                 </h6>
                 <a href="/page-about-us.html" class="dropdown-item border-radius-md">
-                  About Us
+                  О компании
                 </a>
                 <a href="/page-contact-us.html" class="dropdown-item border-radius-md">
-                  Contact Us
+                  Контакты
                 </a>
                 <a href="/page-author.html" class="dropdown-item border-radius-md">
-                  Author
+                  Автор
                 </a>
                 <h6 class="dropdown-header text-dark font-weight-bolder d-flex justify-content-cente align-items-center px-0 mt-3">
                   <div class="d-inline-block">
@@ -150,7 +150,7 @@
                             <g id="Icons-with-opacity" transform="translate(1716.000000, 291.000000)">
                               <g id="office" transform="translate(153.000000, 2.000000)">
                                 <path d="M12.25,17.5 L8.75,17.5 L8.75,1.75 C8.75,0.78225 9.53225,0 10.5,0 L31.5,0 C32.46775,0 33.25,0.78225 33.25,1.75 L33.25,12.25 L29.75,12.25 L29.75,3.5 L12.25,3.5 L12.25,17.5 Z" id="Path" opacity="0.6"></path>
-                                <path d="M40.25,14 L24.5,14 C23.53225,14 22.75,14.78225 22.75,15.75 L22.75,38.5 L19.25,38.5 L19.25,22.75 C19.25,21.78225 18.46775,21 17.5,21 L1.75,21 C0.78225,21 0,21.78225 0,22.75 L0,40.25 C0,41.21775 0.78225,42 1.75,42 L40.25,42 C41.21775,42 42,41.21775 42,40.25 L42,15.75 C42,14.78225 41.21775,14 40.25,14 Z M12.25,36.75 L7,36.75 L7,33.25 L12.25,33.25 L12.25,36.75 Z M12.25,29.75 L7,29.75 L7,26.25 L12.25,26.25 L12.25,29.75 Z M35,36.75 L29.75,36.75 L29.75,33.25 L35,33.25 L35,36.75 Z M35,29.75 L29.75,29.75 L29.75,26.25 L35,26.25 L35,29.75 Z M35,22.75 L29.75,22.75 L29.75,19.25 L35,19.25 L35,22.75 Z" id="Shape"></path>
+                                <path d="M40.25,14 L24.5,14 C23.53225,14 22.75,14.78225 22.75,15.75 L22.75,38.5 L19.25,38.5 L19.25,22.75 C19.25,21.78225 18.46775,21 17.5,21 L1.75,21 C0.78225,21 0,21.78225 0,22.75 L0,40.25 C0,41.21775 0.78225,42 1.75,42 L40.25,42 C41.21775,42 42,41.21775 42,40.25 L42,15.75 C42,14.78225 41.21775,14 40.25,14 Z M12.25,36.75 L7,36.75 L7,33.25 L12.25,33.25 L12.25,36.75 Z M12.25,29.75 L7,29.75 L7,26.25 L12.25,26.25 L12.25,29.75 Z M35,36.75 L29.75,36.75 L29.75,33.25 L35,33.25 L35,36.75 З M35,29.75 L29.75,29.75 Л29.75,26.25 Л35,26.25 Л35,29.75 З M35,22.75 L29.75,22.75 L29.75,19.25 L35,19.25 L35,22.75 З" id="Shape"></path>
                               </g>
                             </g>
                           </g>
@@ -158,13 +158,13 @@
                       </svg>
                     </div>
                   </div>
-                  Account
+                  Аккаунт
                 </h6>
                 <a href="{{ url_for('login') }}" class="dropdown-item border-radius-md">
-                  Sign In
+                  Войти
                 </a>
                 <a href="/page-sign-up.html" class="dropdown-item border-radius-md">
-                  Register
+                  Регистрация
                 </a>
               </div>
               <div class="d-lg-none">
@@ -186,16 +186,16 @@
                       </svg>
                     </div>
                   </div>
-                  Pages
+                  Страницы
                 </h6>
                 <a href="/index.html" class="dropdown-item border-radius-md">
-                  Presentation
+                  Презентация
                 </a>
                 <a href="https://a-biz.kz/about_us/" class="dropdown-item border-radius-md">
-                  About Us
+                  О компании
                 </a>
                 <a href="https://a-biz.kz/contacts/" class="dropdown-item border-radius-md">
-                  Contact Us
+                  Контакты
                 </a>
                 <h6 class="dropdown-header text-dark font-weight-bolder d-flex justify-content-cente align-items-center px-0 mt-3">
                   <div class="d-inline-block">
@@ -207,7 +207,7 @@
                             <g id="Icons-with-opacity" transform="translate(1716.000000, 291.000000)">
                               <g id="office" transform="translate(153.000000, 2.000000)">
                                 <path d="M12.25,17.5 L8.75,17.5 L8.75,1.75 C8.75,0.78225 9.53225,0 10.5,0 L31.5,0 C32.46775,0 33.25,0.78225 33.25,1.75 L33.25,12.25 L29.75,12.25 L29.75,3.5 L12.25,3.5 L12.25,17.5 Z" id="Path" opacity="0.6"></path>
-                                <path d="M40.25,14 L24.5,14 C23.53225,14 22.75,14.78225 22.75,15.75 L22.75,38.5 L19.25,38.5 L19.25,22.75 C19.25,21.78225 18.46775,21 17.5,21 L1.75,21 C0.78225,21 0,21.78225 0,22.75 L0,40.25 C0,41.21775 0.78225,42 1.75,42 L40.25,42 C41.21775,42 42,41.21775 42,40.25 L42,15.75 C42,14.78225 41.21775,14 40.25,14 Z M12.25,36.75 L7,36.75 L7,33.25 L12.25,33.25 L12.25,36.75 Z M12.25,29.75 L7,29.75 L7,26.25 L12.25,26.25 L12.25,29.75 Z M35,36.75 L29.75,36.75 L29.75,33.25 L35,33.25 L35,36.75 Z M35,29.75 L29.75,29.75 L29.75,26.25 L35,26.25 L35,29.75 Z M35,22.75 L29.75,22.75 L29.75,19.25 L35,19.25 L35,22.75 Z" id="Shape"></path>
+                                <path d="M40.25,14 L24.5,14 C23.53225,14 22.75,14.78225 22.75,15.75 L22.75,38.5 L19.25,38.5 L19.25,22.75 C19.25,21.78225 18.46775,21 17.5,21 L1.75,21 C0.78225,21 0,21.78225 0,22.75 L0,40.25 C0,41.21775 0.78225,42 1.75,42 L40.25,42 C41.21775,42 42,41.21775 42,40.25 L42,15.75 C42,14.78225 41.21775,14 40.25,14 Z M12.25,36.75 L7,36.75 L7,33.25 L12.25,33.25 L12.25,36.75 Z M12.25,29.75 L7,29.75 L7,26.25 L12.25,26.25 L12.25,29.75 Z M35,36.75 L29.75,36.75 L29.75,33.25 L35,33.25 L35,36.75 З M35,29.75 L29.75,29.75 Л29.75,26.25 Л35,26.25 Л35,29.75 З M35,22.75 L29.75,22.75 L29.75,19.25 L35,19.25 L35,22.75 З" id="Shape"></path>
                               </g>
                             </g>
                           </g>
@@ -215,13 +215,13 @@
                       </svg>
                     </div>
                   </div>
-                  Account
+                  Аккаунт
                 </h6>
                 <a href="{{ url_for('login') }}" class="dropdown-item border-radius-md">
-                  Sign In
+                  Войти
                 </a>
                 <a href="/page-sign-up.html" class="dropdown-item border-radius-md">
-                  Register
+                  Регистрация
                 </a>
               </div>
             </div>
@@ -231,16 +231,16 @@
           <li class="nav-item ms-lg-auto">
             <a class="nav-link nav-link-icon me-2" href="https://pay.kaspi.kz/pay/sapr0iat" target="_blank">
               <i class="fa fa-download me-1"></i>
-              <p class="d-inline text-sm z-index-1 font-bold" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Pay">Pay</p>
+              <p class="d-inline text-sm z-index-1 font-bold" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Оплатить">Оплатить</p>
             </a>
           </li>
           {% if current_user.is_authenticated %}
             <li class="nav-item my-auto ms-3 ms-lg-0">
-              <a href="{{ url_for('logout') }}" class="btn btn-sm  bg-white  btn-round mb-0 me-1 mt-2 mt-md-0">Logout</a>
+              <a href="{{ url_for('logout') }}" class="btn btn-sm  bg-white  btn-round mb-0 me-1 mt-2 mt-md-0">Выйти</a>
             </li>            
           {% else %}
             <li class="nav-item my-auto ms-3 ms-lg-0">
-              <a href="https://wa.me/+77765216605" class="btn btn-sm  bg-white  btn-round mb-0 me-1 mt-2 mt-md-0">Support</a>
+              <a href="https://wa.me/+77765216605" class="btn btn-sm  bg-white  btn-round mb-0 me-1 mt-2 mt-md-0">Поддержка</a>
             </li>
           {% endif %}
         </ul>

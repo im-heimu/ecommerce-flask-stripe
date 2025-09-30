@@ -1,6 +1,6 @@
 {% extends 'layouts/base-fullscreen.html' %}
 
-{% block title %} Sign IN {% endblock title %}
+{% block title %} Вход {% endblock title %}
 
 <!-- Specific CSS goes HERE -->
 {% block stylesheets %}{% endblock stylesheets %}
@@ -18,30 +18,30 @@
           <div class="col-xl-4 col-lg-5 col-md-7 d-flex flex-column mx-lg-0 mx-auto">
             <div class="card card-plain">
               <div class="card-header pb-0 text-left">
-                <h4 class="font-weight-bolder">Sign In</h4>
-                <p class="mb-0">Enter your username and password to sign in</p>
+                <h4 class="font-weight-bolder">Вход</h4>
+                <p class="mb-0">Введите имя пользователя и пароль, чтобы войти</p>
               </div>
               <div class="card-body">
                 <form method="post" role="form">
                   <div class="mb-3">
-                    <input class="form-control form-control-lg" name="username" placeholder="Username" aria-label="Username" aria-describedby="username-addon">
+                    <input class="form-control form-control-lg" name="username" placeholder="Имя пользователя" aria-label="Username" aria-describedby="username-addon">
                   </div>
                   <div class="mb-3">
-                    <input type="password" class="form-control form-control-lg" name="password" placeholder="Password" aria-label="Password" aria-describedby="password-addon">
+                    <input type="password" class="form-control form-control-lg" name="password" placeholder="Пароль" aria-label="Password" aria-describedby="password-addon">
                   </div>
                   <div class="form-check form-switch">
                     <input class="form-check-input" type="checkbox" id="rememberMe">
-                    <label class="form-check-label" name="remember" for="rememberMe">Remember me</label>
+                    <label class="form-check-label" name="remember" for="rememberMe">Запомнить меня</label>
                   </div>
                   <div class="text-center">
-                    <button type="submit" class="btn btn-lg bg-gradient-primary btn-lg w-100 mt-4 mb-0">Sign in</button>
+                    <button type="submit" class="btn btn-lg bg-gradient-primary btn-lg w-100 mt-4 mb-0">Войти</button>
                   </div>
                 </form>
               </div>
               <div class="card-footer text-center pt-0 px-lg-2 px-1">
                 <p class="mb-4 text-sm mx-auto">
-                  Don't have an account?
-                  <a href="/page-sign-up.html" class="text-primary text-gradient font-weight-bold">Sign up</a>
+                  Нет аккаунта?
+                  <a href="/page-sign-up.html" class="text-primary text-gradient font-weight-bold">Зарегистрироваться</a>
                 </p>
               </div>
             </div>

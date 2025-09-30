@@ -1,6 +1,6 @@
 {% extends 'layouts/base.html' %}
 
-{% block title %} Author {% endblock title %}
+{% block title %} Автор {% endblock title %}
 
 <!-- Specific CSS goes HERE -->
 {% block stylesheets %}{% endblock stylesheets %}
@@ -43,18 +43,18 @@
                 </h4>
                 <div class="d-block">
                   <a href="{{ url_for('products_index') }}{{ featured_product.slug }}" 
-                     class="btn btn-sm btn-outline-info text-nowrap mb-0">PROMO</a>
+                     class="btn btn-sm btn-outline-info text-nowrap mb-0">АКЦИЯ</a>
                 </div>                
               </div>
               <div class="row mb-4">
                 <div class="col-auto">
-                  <span>Featured Product - ₸{{ featured_product.price }}</span>
+                  <span>Рекомендуемый товар - ${{ featured_product.price }}</span>
                 </div>
               </div>
               <p class="text-lg mb-0">
                 {{ featured_product.full_description }} 
                 <br>
-                <a href="{{ url_for('products_index') }}{{ featured_product.slug }}" class="text-info icon-move-right">See Product
+                <a href="{{ url_for('products_index') }}{{ featured_product.slug }}" class="text-info icon-move-right">Смотреть товар
                   <i class="fas fa-arrow-right text-sm ms-1"></i>
                 </a>
               </p>
@@ -71,7 +71,7 @@
       <div class="row">
         <div class="col-lg-6">
           <h3 class="mb-5">
-            Latest PRODUCTS
+            Последние товары
           </h3>
         </div>
       </div>
@@ -104,14 +104,14 @@
                 <div class="card-body px-0">
                   <h5>
                     <a href="{{ url_for('products_index') }}{{ product.slug }}" class="text-dark font-weight-bold">
-                      {{ product.name }} - ₸{{ product.price }}
+                      {{ product.name }} - ${{ product.price }}
                     </a>
                   </h5>
                   <p>
                     {{ product.info }}
                   </p>
                   <a href="{{ url_for('products_index') }}{{ product.slug }}" class="text-info icon-move-right">
-                    See Product
+                    Смотреть товар
                     <i class="fas fa-arrow-right text-sm"></i>
                   </a>
                 </div>
@@ -127,14 +127,14 @@
                 <div class="content-left text-left my-auto py-4">
                   <a href="javascript:;">
                     <h2 class="card-title text-white">
-                      Simple eCommerce App
+                      Простой eCommerce App
                     </h2>
                     <p class="card-description text-white">
-                      The products are loaded from static files (JSON format) and presented to the user using a modern UI Kit
+                      Товары загружаются из статических JSON-файлов и показываются пользователю на основе современного UI Kit
                     </p>
                     <a target="_blank" href="https://github.com/app-generator/ecommerce-flask-stripe"  
                       class="text-white icon-move-right">
-                      Read More 
+                      Подробнее 
                       <i class="fas fa-arrow-right text-sm"></i>
                     </a>
                   </a>
@@ -147,7 +147,17 @@
             
           <div class="col-lg-12 col-sm-12">
             <p class="lead">
-              No products defined.
+
+              {% if current_user.is_authenticated %}
+
+                Товары не добавлены. <mark>Импортируйте <a href="{{ url_for('load_product_json') }}" class="text-primary">товары</a> из Stripe.</mark>
+              
+              {% else %}
+
+                Товары не добавлены. <mark>Пожалуйста, <a class="text-primary" href="{{ url_for('login') }}">войдите</a>, чтобы импортировать товары из Stripe.</mark>
+
+              {% endif %}
+
             </p>    
           </div>    
 
