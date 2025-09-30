@@ -1,6 +1,6 @@
 {% extends 'layouts/base.html' %}
 
-{% block title %} About US {% endblock title %}
+{% block title %} О товаре {% endblock title %}
 
 <!-- Specific CSS goes HERE -->
 {% block stylesheets %}{% endblock stylesheets %}
@@ -37,11 +37,11 @@
             <span style="display:none" id="product_slug">{{ product.slug }}</span>
             
             <a href="https://pay.kaspi.kz/pay/sapr0iat" target="_blank" rel="noopener" class="btn bg-white text-dark">
-              Buy Product - ₸{{ product.price }}
+              Купить товар от - ₸{{ product.price }} в месяц 
             </a>
 
             <h6 class="text-white mb-2 mt-5">
-              Chat with Support
+              Связаться с поддержкой
             </h6>
             <div class="d-flex justify-content-center">
               <a href="#">
@@ -100,7 +100,7 @@
                   </svg>
                 </div>
                 <h5>
-                  Product Description
+                  Описание товара
                 </h5>
                 <p>
                   {{ product.full_description }}  

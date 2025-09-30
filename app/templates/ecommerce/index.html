@@ -48,7 +48,7 @@
               </div>
               <div class="row mb-4">
                 <div class="col-auto">
-                  <span>Рекомендуемый товар - ${{ featured_product.price }}</span>
+                  <span>Рекомендуемый товар от - ₸{{ featured_product.price }} в месяц</span>
                 </div>
               </div>
               <p class="text-lg mb-0">
@@ -104,7 +104,7 @@
                 <div class="card-body px-0">
                   <h5>
                     <a href="{{ url_for('products_index') }}{{ product.slug }}" class="text-dark font-weight-bold">
-                      {{ product.name }} - ${{ product.price }}
+                      {{ product.name }} - от ₸{{ product.price }} в месяц
                     </a>
                   </h5>
                   <p>
@@ -154,7 +154,7 @@
               
               {% else %}
 
-                Товары не добавлены. <mark>Пожалуйста, <a class="text-primary" href="{{ url_for('login') }}">войдите</a>, чтобы импортировать товары из Stripe.</mark>
+                Товары не добавлены. <mark>Пожалуйста, <a class="text-primary" href="{{ url_for('login') }}">войдите</a>, чтобы импортировать ваших ботов.</mark>
 
               {% endif %}
 
